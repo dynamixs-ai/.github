@@ -109,6 +109,24 @@ Add the following to your `~/.m2/settings.xml`:
 
 ---
 
+## Understanding Token Scope
+
+When you create a PAT on GitHub, you do **not** explicitly assign it to a specific organization. A PAT is always bound to your **personal GitHub account**.
+
+The access restriction works indirectly: the token can only access resources that your personal account already has access to. So a token created by `rsoika` can access `dynamixs-ai` packages only because `rsoika` is a member of that organization – nobody else's token would grant access to your organization.
+
+### Classic Tokens vs. Fine-grained Tokens
+
+|                 | Classic Token                                 | Fine-grained Token                            |
+| --------------- | --------------------------------------------- | --------------------------------------------- |
+| Scope           | All orgs/repos your account can access        | Explicitly restricted to specific org/repo    |
+| Granularity     | Coarse (e.g. `write:packages` for everything) | Fine (e.g. `read:packages` for one repo only) |
+| Recommended for | Internal developers                           | Partners / external collaborators             |
+
+For internal developers a Classic Token with `read:packages` / `write:packages` is acceptable. For partners, always use **Fine-grained Tokens** – they can be restricted explicitly to the `dynamixs-ai` organization and a specific repository, giving you full control. Partner tokens can be revoked at any time without affecting other users.
+
+---
+
 ## Partner Access
 
 Partners receive a dedicated **read-only token** with only the `read:packages` scope. This allows pulling images and downloading Maven artifacts, but does not allow publishing.
