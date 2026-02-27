@@ -17,4 +17,4 @@ Imixs-Workflow technology with modern AI integration.
 Build custom workflow solutions on top of the Dynamixs.AI platform.  
 Start with our [Partner Template](https://github.com/dynamixs-ai/partner-template).
 
-📬 Contact: info@dynamixs.ai
+📬 Contact: partner@dynamixs.ai
