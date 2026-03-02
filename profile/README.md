@@ -1,8 +1,7 @@
 # Dynamixs.AI
 
 AI-powered Business Process Management for SMEs, built on the proven open source foundation
-of [Imixs-Workflow](https://github.com/imixs/imixs-workflow) — with 15 years of production
-experience in Jakarta EE environments.
+of [Imixs-Workflow](https://github.com/imixs/imixs-workflow).
 
 ---
 
@@ -16,7 +15,7 @@ document management stack — all deployable on any Jakarta EE application serve
 | ---------------- | ------------------------------- |
 | Workflow Engine  | Imixs-Workflow (Jakarta EE)     |
 | AI Integration   | OpenAI-compatible LLM endpoints |
-| Document Store   | Apache Cassandra                |
+| RAG Store        | Apache Cassandra                |
 | Document Editing | Collabora Online (WOPI)         |
 | OCR              | Apache Tika                     |
 
