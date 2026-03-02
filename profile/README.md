@@ -22,10 +22,31 @@ document management stack — all deployable on any Jakarta EE application serve
 
 ---
 
+## Low-Code with BPMN
+
+Dynamixs.AI is a **Low-Code platform** — business processes are designed visually using
+[Open-BPMN](https://www.open-bpmn.org/), a free and open BPMN 2.0 modeler. No coding required
+to define process flows, AI conditions, or document handling rules.
+
+[![Open-BPMN Modeler](https://www.open-bpmn.org/images/imixs-bpmn-001.png)](https://www.open-bpmn.org/)
+
+Open-BPMN runs in **Visual Studio Code**, **Eclipse IDE**, or directly **in the browser** —
+no additional tooling setup needed for most partners.
+
+- 🔷 [Open-BPMN Website](https://www.open-bpmn.org/)
+- 📦 [Install Open-BPMN](https://www.open-bpmn.org/install.html)
+- 🎓 [How to Model](https://www.open-bpmn.org/how_to_model.html)
+
+---
+
 ## For Partners
 
 Build and deliver custom workflow solutions on top of the Dynamixs.AI platform.
 There are two ways to get started:
+
+**☁️ Hosted by Dynamixs.AI**
+No deployment at all — we run and maintain the platform for your customer.
+You focus entirely on the BPMN process design and configuration.
 
 **🐳 Quick Start — Docker Compose**
 Spin up the full platform stack in minutes using our pre-built Docker image.
